@@ -1,0 +1,605 @@
+IQ-TREE 2.2.2.7 COVID-edition built May 31 2023
+
+Partition file name: combined_top50.partition
+Input file name: phyling_align_top50/Top50_multi.mfa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 846624
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 96 taxa with 50 partitions and 18896 total sites (20.0436% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	93	190	98	52	130	130	100489at147545.aa
+   2	AA	81	254	114	63	163	163	101424at147545.aa
+   3	AA	77	202	98	50	141	141	101803at147545.aa
+   4	AA	83	168	63	32	134	134	102942at147545.aa
+   5	AA	60	169	74	63	106	106	103491at147545.aa
+   6	AA	73	186	86	38	139	139	103613at147545.aa
+   7	AA	60	949	459	321	466	466	10553at147545.aa
+   8	AA	74	130	40	15	109	109	111668at147545.aa
+   9	AA	82	136	61	36	90	90	112316at147545.aa
+  10	AA	78	136	23	4	132	132	112526at147545.aa
+  11	AA	77	194	179	164	30	30	113970at147545.aa
+  12	AA	79	115	52	29	83	83	115802at147545.aa
+  13	AA	80	98	47	15	69	69	117777at147545.aa
+  14	AA	76	146	73	42	98	98	118119at147545.aa
+  15	AA	68	84	45	24	57	57	119262at147545.aa
+  16	AA	83	802	290	240	533	533	14123at147545.aa
+  17	AA	79	562	162	129	417	417	29398at147545.aa
+  18	AA	90	585	410	383	196	196	30334at147545.aa
+  19	AA	88	619	258	218	396	396	30420at147545.aa
+  20	AA	87	563	260	200	335	335	31211at147545.aa
+  21	AA	66	683	316	277	376	376	33099at147545.aa
+  22	AA	68	559	253	212	310	310	37149at147545.aa
+  23	AA	78	502	229	147	307	307	41498at147545.aa
+  24	AA	80	476	314	287	177	177	45324at147545.aa
+  25	AA	82	462	212	138	282	282	45769at147545.aa
+  26	AA	85	448	188	165	275	275	46768at147545.aa
+  27	AA	82	436	129	60	366	366	47488at147545.aa
+  28	AA	80	497	196	150	322	322	48331at147545.aa
+  29	AA	78	526	228	169	322	322	49761at147545.aa
+  30	AA	72	439	61	15	398	398	50141at147545.aa
+  31	AA	70	491	213	168	301	301	52223at147545.aa
+  32	AA	57	414	148	97	290	290	55734at147545.aa
+  33	AA	87	1180	382	135	801	801	5796at147545.aa
+  34	AA	82	365	146	89	251	251	60098at147545.aa
+  35	AA	82	389	94	28	359	359	60920at147545.aa
+  36	AA	85	403	154	129	266	266	61270at147545.aa
+  37	AA	79	409	177	117	263	263	66556at147545.aa
+  38	AA	81	363	152	86	268	268	69241at147545.aa
+  39	AA	72	341	93	49	280	280	70481at147545.aa
+  40	AA	64	355	137	78	243	243	70760at147545.aa
+  41	AA	80	288	136	94	191	191	74241at147545.aa
+  42	AA	83	445	203	152	272	272	74882at147545.aa
+  43	AA	53	302	131	83	197	197	76922at147545.aa
+  44	AA	67	279	95	40	218	218	78806at147545.aa
+  45	AA	66	262	73	28	203	203	84672at147545.aa
+  46	AA	72	284	98	69	213	213	85577at147545.aa
+  47	AA	83	268	73	48	217	217	91275at147545.aa
+  48	AA	65	224	95	31	147	147	95473at147545.aa
+  49	AA	61	214	56	39	173	173	97109at147545.aa
+  50	AA	74	304	167	114	157	157	99572at147545.aa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-equal partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  HIVB+F+I+G4    1.0000  HIVB+F+I{0.250288}+G4{0.260424}
+   2  HIVB+F+I+G4    1.0000  HIVB+F+I{0.209559}+G4{0.362618}
+   3  HIVB+F+I+G4    1.0000  HIVB+F+I{0.291609}+G4{0.247919}
+   4  HIVB+F+I+G4    1.0000  HIVB+F+I{0.513458}+G4{0.151693}
+   5  HIVB+F+I+G4    1.0000  HIVB+F+I{0.20346}+G4{0.450077}
+   6  HIVB+F+I+G4    1.0000  HIVB+F+I{0.444398}+G4{0.257407}
+   7  HIVB+F+I+G4    1.0000  HIVB+F+I{0.491037}+G4{0.256652}
+   8  HIVB+F+I+G4    1.0000  HIVB+F+I{0.606437}+G4{0.135844}
+   9  HIVB+F+I+G4    1.0000  HIVB+F+I{0.205459}+G4{0.266208}
+  10  HIVB+F+I+G4    1.0000  HIVB+F+I{0.925389}+G4{0.0675805}
+  11  HIVB+F+I+G4    1.0000  HIVB+F+I{0.101323}+G4{998.513}
+  12  HIVB+F+I+G4    1.0000  HIVB+F+I{0.319736}+G4{0.191155}
+  13  HIVB+F+I+G4    1.0000  HIVB+F+I{0.261719}+G4{0.273537}
+  14  HIVB+F+I+G4    1.0000  HIVB+F+I{0.274476}+G4{0.386017}
+  15  HIVB+F+I+G4    1.0000  HIVB+F+I{0.2432}+G4{0.259906}
+  16  HIVB+F+I+G4    1.0000  HIVB+F+I{0.497924}+G4{0.71245}
+  17  HIVB+F+I+G4    1.0000  HIVB+F+I{0.428459}+G4{0.253274}
+  18  HIVB+F+I+G4    1.0000  HIVB+F+I{0.335039}+G4{14.3358}
+  19  HIVB+F+I+G4    1.0000  HIVB+F+I{0.0511748}+G4{0.127105}
+  20  HIVB+F+I+G4    1.0000  HIVB+F+I{0.504949}+G4{0.255575}
+  21  HIVB+F+I+G4    1.0000  HIVB+F+I{0.550506}+G4{0.175766}
+  22  HIVB+F+I+G4    1.0000  HIVB+F+I{0.492158}+G4{2.22119}
+  23  HIVB+F+I+G4    1.0000  HIVB+F+I{0.114741}+G4{0.227004}
+  24  HIVB+F+I+G4    1.0000  HIVB+F+I{1.00011e-06}+G4{0.588312}
+  25  HIVB+F+I+G4    1.0000  HIVB+F+I{0.00641057}+G4{0.235073}
+  26  HIVB+F+I+G4    1.0000  HIVB+F+I{0.238425}+G4{0.375479}
+  27  HIVB+F+I+G4    1.0000  HIVB+F+I{0.560799}+G4{0.119672}
+  28  HIVB+F+I+G4    1.0000  HIVB+F+I{0.266789}+G4{0.311561}
+  29  HIVB+F+I+G4    1.0000  HIVB+F+I{0.292935}+G4{0.378398}
+  30  HIVB+F+I+G4    1.0000  HIVB+F+I{0.742957}+G4{0.107497}
+  31  HIVB+F+I+G4    1.0000  HIVB+F+I{0.200304}+G4{0.335769}
+  32  HIVB+F+I+G4    1.0000  HIVB+F+I{0.542191}+G4{0.644759}
+  33  HIVB+F+I+G4    1.0000  HIVB+F+I{0.336336}+G4{0.37245}
+  34  HIVB+F+I+G4    1.0000  HIVB+F+I{0.282846}+G4{0.219393}
+  35  HIVB+F+I+G4    1.0000  HIVB+F+I{0.785887}+G4{0.0924033}
+  36  HIVB+F+I+G4    1.0000  HIVB+F+I{0.353456}+G4{0.383498}
+  37  HIVB+F+I+G4    1.0000  HIVB+F+I{0.216452}+G4{0.294671}
+  38  HIVB+F+I+G4    1.0000  HIVB+F+I{0.487641}+G4{0.338904}
+  39  HIVB+F+I+G4    1.0000  HIVB+F+I{0.598074}+G4{0.198131}
+  40  HIVB+F+I+G4    1.0000  HIVB+F+I{0.396455}+G4{0.3885}
+  41  HIVB+F+I+G4    1.0000  HIVB+F+I{0.370785}+G4{0.257376}
+  42  HIVB+F+I+G4    1.0000  HIVB+F+I{0.180897}+G4{0.295693}
+  43  HIVB+F+I+G4    1.0000  HIVB+F+I{0.419267}+G4{0.313164}
+  44  HIVB+F+I+G4    1.0000  HIVB+F+I{0.509759}+G4{0.277776}
+  45  HIVB+F+I+G4    1.0000  HIVB+F+I{0.429415}+G4{0.188343}
+  46  HIVB+F+I+G4    1.0000  HIVB+F+I{0.437538}+G4{0.271849}
+  47  HIVB+F+I+G4    1.0000  HIVB+F+I{0.655602}+G4{0.323411}
+  48  HIVB+F+I+G4    1.0000  HIVB+F+I{0.416233}+G4{0.689746}
+  49  HIVB+F+I+G4    1.0000  HIVB+F+I{0.559988}+G4{0.194758}
+  50  HIVB+F+I+G4    1.0000  HIVB+F+I{0.43522}+G4{0.262067}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -132189.6745 (s.e. 974.4215)
+Unconstrained log-likelihood (without tree): -82875.6120
+Number of free parameters (#branches + #model parameters): 1239
+Akaike information criterion (AIC) score: 266857.3491
+Corrected Akaike information criterion (AICc) score: 267031.3817
+Bayesian information criterion (BIC) score: 276579.4172
+
+Total tree length (sum of branch lengths): 3.2323
+Sum of internal branch lengths: 2.6516 (82.0345% of tree length)
+
+WARNING: 32 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Aspergillus_fumigatus_Af293' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++-------------Aspergillus_fumigatus_Af293
+|
+|                                                                      +--Histoplasma_capsulatum_07_12-RJ
+|                                                                   +--| (100/100)
+|                                                                   |  |        +--Histoplasma_capsulatum_CB053-2
+|                                                                   |  |     +**| (0/76)
+|                                                                   |  |     |  |  +**Histoplasma_capsulatum_CB055-2
+|                                                                   |  |     |  +**| (0/90)
+|                                                                   |  |     |     +**Histoplasma_capsulatum_SECH_101-Nam2_G184A
+|                                                                   |  |  +--| (95.8/97)
+|                                                                   |  |  |  +**Histoplasma_capsulatum_SECH_100-Nam2_G186A
+|                                                                   |  +--| (99.5/97)
+|                                                                   |     +--Histoplasma_capsulatum_HISSP-CM6408
+|                                                                +--| (100/77)
+|                                                                |  |           +--Histoplasma_capsulatum_JB_031837-Hc_031837
+|                                                                |  |        +**| (0/97)
+|                                                                |  |        |  +--Histoplasma_capsulatum_JB_062775-Hc_062775
+|                                                                |  |     +--| (100/100)
+|                                                                |  |     |  +--Histoplasma_capsulatum_JB_042430-Hc_042430
+|                                                                |  |  +--| (100/93)
+|                                                                |  |  |  +--Histoplasma_capsulatum_JB_083285_2-Hc_083285_2
+|                                                                |  +--| (3.8/51)
+|                                                                |     +--Histoplasma_suramericanum_SECH_105-Nam2_21_14
+|                                                             +--| (80.9/72)
+|                                                             |  +--Histoplasma_suramericanum_SECH_104-Nam2_27_14
+|                                                          +**| (0/75)
+|                                                          |  |              +**Histoplasma_capsulatum_CB062-2
+|                                                          |  |           +--| (99.8/88)
+|                                                          |  |           |  |  +**Histoplasma_capsulatum_CB066-2
+|                                                          |  |           |  +**| (0/87)
+|                                                          |  |           |     |  +**Histoplasma_capsulatum_SECH_109
+|                                                          |  |           |     +--| (0/75)
+|                                                          |  |           |        |  +**Histoplasma_mississippiense_II_SECH_81-Nam1_WU24
+|                                                          |  |           |        +**| (0/61)
+|                                                          |  |           |           |     +**Histoplasma_mississippiense_II_SECH_83-Nam1_CI_7
+|                                                          |  |           |           |  +--| (89/99)
+|                                                          |  |           |           |  |  +--Histoplasma_mississippiense_II_SECH_87-Nam1_CI_42
+|                                                          |  |           |           +--| (84.7/76)
+|                                                          |  |           |              |  +**Histoplasma_mississippiense_II_SECH_90-Nam1_DOWNS
+|                                                          |  |           |              +--| (95.4/100)
+|                                                          |  |           |                 +--Histoplasma_mississippiense_II_SECH_102Nam2_505
+|                                                          |  |        +--| (93.2/86)
+|                                                          |  |        |  |           +**Histoplasma_capsulatum_CB063-2
+|                                                          |  |        |  |        +**| (0/50)
+|                                                          |  |        |  |        |  |     +--Histoplasma_capsulatum_CB174-2
+|                                                          |  |        |  |        |  |  +**| (0/75)
+|                                                          |  |        |  |        |  |  |  +**Histoplasma_mississippiense_II_SECH_86-Nam1_CI_24
+|                                                          |  |        |  |        |  +**| (0/51)
+|                                                          |  |        |  |        |     +--Histoplasma_capsulatum_CB186-2
+|                                                          |  |        |  |     +**| (0/52)
+|                                                          |  |        |  |     |  +--Histoplasma_capsulatum_CB064-2
+|                                                          |  |        |  |  +**| (0/33)
+|                                                          |  |        |  |  |  +**Histoplasma_capsulatum_CB180-2
+|                                                          |  |        |  +**| (0/39)
+|                                                          |  |        |     |  +**Histoplasma_capsulatum_CB065-2
+|                                                          |  |        |     +**| (0/57)
+|                                                          |  |        |        |     +**Histoplasma_capsulatum_CB168-2
+|                                                          |  |        |        |  +**| (0/71)
+|                                                          |  |        |        |  |  +--Histoplasma_capsulatum_CB192-2
+|                                                          |  |        |        +**| (0/65)
+|                                                          |  |        |           +**Histoplasma_mississippiense_II_SECH_88-Nam1_CI_43
+|                                                          |  |     +--| (44.7/64)
+|                                                          |  |     |  +--Histoplasma_mississippiense_II_SECH_85-Nam1_CI_22
+|                                                          |  |  +--| (68.2/62)
+|                                                          |  |  |  +--Histoplasma_mississippiense_I_SECH_89-Nam1_UCLA-531
+|                                                          |  +--| (100/88)
+|                                                          |     +--Histoplasma_mississippiense_II_SECH_84-Nam1_CI_19
+|                                                       +--| (97.2/86)
+|                                                       |  |                                +**Histoplasma_capsulatum_104_p_06
+|                                                       |  |                             +**| (0/87)
+|                                                       |  |                             |  |  +**Histoplasma_capsulatum_144_p_08
+|                                                       |  |                             |  +--| (95.9/100)
+|                                                       |  |                             |     +**Histoplasma_capsulatum_327_P_12
+|                                                       |  |                          +--| (100/100)
+|                                                       |  |                          |  |        +**Histoplasma_capsulatum_136_P_07
+|                                                       |  |                          |  |     +**| (0/38)
+|                                                       |  |                          |  |     |  +**Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S11
+|                                                       |  |                          |  |  +**| (0/72)
+|                                                       |  |                          |  |  |  +**Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S16
+|                                                       |  |                          |  +--| (90.6/82)
+|                                                       |  |                          |     |  +**Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S14
+|                                                       |  |                          |     +**| (0/90)
+|                                                       |  |                          |        +**Histoplasma_capsulatum_Histo-485P20
+|                                                       |  |                       +--| (90.6/66)
+|                                                       |  |                       |  |  +**Histoplasma_capsulatum_117_p_12
+|                                                       |  |                       |  +**| (0/88)
+|                                                       |  |                       |     |  +**Histoplasma_capsulatum_1517_p_17
+|                                                       |  |                       |     +**| (0/84)
+|                                                       |  |                       |        +**Histoplasma_capsulatum_388_p_11
+|                                                       |  |                    +**| (0/51)
+|                                                       |  |                    |  +--Histoplasma_capsulatum_316_p_10
+|                                                       |  |                 +**| (0/56)
+|                                                       |  |                 |  +**Histoplasma_capsulatum_343_p_18
+|                                                       |  |              +**| (0/64)
+|                                                       |  |              |  +**Histoplasma_capsulatum_122_p_10_B
+|                                                       |  |           +--| (100/100)
+|                                                       |  |           |  +--Histoplasma_capsulatum_256_P_18
+|                                                       |  |        +--| (99.8/82)
+|                                                       |  |        |  +--Histoplasma_capsulatum_JB_01752-Hc_01752
+|                                                       |  |     +**| (0/65)
+|                                                       |  |     |  |        +--Histoplasma_capsulatum_19VMG-15
+|                                                       |  |     |  |     +--| (74.9/61)
+|                                                       |  |     |  |     |  +--Histoplasma_suramericanum_SECH_103-Nam2_3_11G
+|                                                       |  |     |  |  +--| (100/80)
+|                                                       |  |     |  |  |  |        +--Histoplasma_capsulatum_HISSP-11571-Belem1
+|                                                       |  |     |  |  |  |     +--| (99.8/100)
+|                                                       |  |     |  |  |  |     |  |           +--Histoplasma_capsulatum_HISSP-CM6015
+|                                                       |  |     |  |  |  |     |  |        +--| (100/85)
+|                                                       |  |     |  |  |  |     |  |        |  |  +--Histoplasma_capsulatum_HISSP-FGAMA2041
+|                                                       |  |     |  |  |  |     |  |        |  +--| (75/76)
+|                                                       |  |     |  |  |  |     |  |        |     +--Histoplasma_capsulatum_HISSP-FGFAN2059
+|                                                       |  |     |  |  |  |     |  |     +**| (0/46)
+|                                                       |  |     |  |  |  |     |  |     |  +--Histoplasma_capsulatum_HISSP-FGPIA2052
+|                                                       |  |     |  |  |  |     |  |  +--| (90.7/59)
+|                                                       |  |     |  |  |  |     |  |  |  |           +--Histoplasma_capsulatum_HISSP-FGBIK2051
+|                                                       |  |     |  |  |  |     |  |  |  |        +--| (75.5/60)
+|                                                       |  |     |  |  |  |     |  |  |  |        |  +--Histoplasma_capsulatum_HISSP-FGLIN2055
+|                                                       |  |     |  |  |  |     |  |  |  |     +--| (58.5/52)
+|                                                       |  |     |  |  |  |     |  |  |  |     |  +--Histoplasma_capsulatum_HISSP-FGPIE2055
+|                                                       |  |     |  |  |  |     |  |  |  |  +--| (62.9/52)
+|                                                       |  |     |  |  |  |     |  |  |  |  |  +--Histoplasma_capsulatum_HISSP-FGBON2001
+|                                                       |  |     |  |  |  |     |  |  |  +--| (76.6/46)
+|                                                       |  |     |  |  |  |     |  |  |     +--Histoplasma_capsulatum_HISSP-FGJOS2044
+|                                                       |  |     |  |  |  |     |  +**| (0/53)
+|                                                       |  |     |  |  |  |     |     +**Histoplasma_capsulatum_HISSP-FGFER2036
+|                                                       |  |     |  |  |  |  +--| (32.4/62)
+|                                                       |  |     |  |  |  |  |  +--Histoplasma_capsulatum_JB_062632-Hc_062632
+|                                                       |  |     |  |  |  +**| (0/42)
+|                                                       |  |     |  |  |     +--Histoplasma_capsulatum_HISSP-FGPERS2034
+|                                                       |  |     |  +--| (100/84)
+|                                                       |  |     |     +--Histoplasma_capsulatum_NACVFR_Histo_HC1070058_2
+|                                                       |  |  +--| (100/82)
+|                                                       |  |  |  |              +--Histoplasma_capsulatum_ES2_83Z
+|                                                       |  |  |  |           +--| (86/96)
+|                                                       |  |  |  |           |  |  +**Histoplasma_capsulatum_SECH_107-mis_Hc_duboisii-B
+|                                                       |  |  |  |           |  +--| (32.2/87)
+|                                                       |  |  |  |           |     +--Histoplasma_capsulatum_ES2_90Z
+|                                                       |  |  |  |        +--| (86.7/98)
+|                                                       |  |  |  |        |  +--Histoplasma_capsulatum_ES2_86Z
+|                                                       |  |  |  |     +--| (98.9/100)
+|                                                       |  |  |  |     |  |  +--Histoplasma_capsulatum_ES2_88Z
+|                                                       |  |  |  |     |  +--| (77.7/98)
+|                                                       |  |  |  |     |     +--Histoplasma_capsulatum_HCH143
+|                                                       |  |  |  |  +--| (94.1/100)
+|                                                       |  |  |  |  |  +--Histoplasma_capsulatum_ES2_85Z
+|                                                       |  |  |  +--| (100/100)
+|                                                       |  |  |     +--Histoplasma_capsulatum_ES2_89Z
+|                                                       |  +--| (100/86)
+|                                                       |     |  +--Histoplasma_capsulatum_HISSP-B05821
+|                                                       |     +--| (100/100)
+|                                                       |        |           +--Histoplasma_capsulatum_SA15
+|                                                       |        |        +--| (100/100)
+|                                                       |        |        |  +--Histoplasma_ohiense_SECH_96.Nam2_CI_17
+|                                                       |        |     +--| (77.6/70)
+|                                                       |        |     |  +**Histoplasma_ohiense_SECH_98.Nam2_CI_30
+|                                                       |        |  +**| (0/56)
+|                                                       |        |  |  +--Histoplasma_ohiense_SECH_97-Nam2_CI_18
+|                                                       |        +--| (100/100)
+|                                                       |           |           +**Histoplasma_capsulatum_SECH_110
+|                                                       |           |        +--| (87.9/100)
+|                                                       |           |        |  +**Histoplasma_ohiense_SECH_91-Nam2_G217B
+|                                                       |           |     +**| (0/84)
+|                                                       |           |     |  +--Histoplasma_ohiense_SECH_95.Nam2_CI_10
+|                                                       |           |  +--| (82.7/87)
+|                                                       |           |  |  |     +--Histoplasma_ohiense_SECH_82-Nam1_CI_4
+|                                                       |           |  |  |  +**| (0/89)
+|                                                       |           |  |  |  |  +--Histoplasma_ohiense_SECH_92-Nam2_G222B
+|                                                       |           |  |  +--| (99.9/88)
+|                                                       |           |  |     +--Histoplasma_ohiense_SECH_99-Nam2_CI_35
+|                                                       |           +--| (79.4/64)
+|                                                       |              |  +--Histoplasma_ohiense_SECH_93.Nam2_CI_6
+|                                                       |              +--| (88.5/84)
+|                                                       |                 +--Histoplasma_ohiense_SECH_94-Nam2_CI_9
+|                                                    +--| (98.7/86)
+|                                                    |  +--Histoplasma_capsulatum_HISSP-1014-Belem3
+|                         +--------------------------| (100/100)
+|                         |                          +--Histoplasma_capsulatum_HISSP-CM7256-xx-CL-SEN-xxxx-036-BB
++-------------------------| (100/100)
+|                         |                             +--Histoplasma_capsulatum_JB_021091-Hc_021091
+|                         +-----------------------------| (100/100)
+|                                                       +--Histoplasma_capsulatum_JB_073129-Hc_073129
+|
+|                            +**Histoplasma_capsulatum_HISSP-FGFAR0189
+|                         +**| (0/94)
+|                         |  +**Histoplasma_capsulatum_HISSP-FGPSO2043
+|                      +--| (71/95)
+|                      |  +--Histoplasma_capsulatum_HISSP-FGFIN2028
++----------------------| (100/100)
+                       |  +--Histoplasma_capsulatum_HISSP-FGMAR2044
+                       +--| (95.8/96)
+                          +--Histoplasma_capsulatum_HISSP-FGTRO0285
+
+Tree in newick format:
+
+(Aspergillus_fumigatus_Af293:0.3194508109,((((((((Histoplasma_capsulatum_07_12-RJ:0.0045964387,(((Histoplasma_capsulatum_CB053-2:0.0017988087,(Histoplasma_capsulatum_CB055-2:0.0000010000,Histoplasma_capsulatum_SECH_101-Nam2_G184A:0.0000010000)0/90:0.0000027577)0/76:0.0000025489,Histoplasma_capsulatum_SECH_100-Nam2_G186A:0.0000010000)95.8/97:0.0008684383,Histoplasma_capsulatum_HISSP-CM6408:0.0064265313)99.5/97:0.0021916509)100/100:0.0158594037,((((Histoplasma_capsulatum_JB_031837-Hc_031837:0.0002157782,Histoplasma_capsulatum_JB_062775-Hc_062775:0.0005228590)0/97:0.0000028946,Histoplasma_capsulatum_JB_042430-Hc_042430:0.0000784310)100/100:0.0077563775,Histoplasma_capsulatum_JB_083285_2-Hc_083285_2:0.0006342480)100/93:0.0034715206,Histoplasma_suramericanum_SECH_105-Nam2_21_14:0.0035153956)3.8/51:0.0000576198)100/77:0.0055132849,Histoplasma_suramericanum_SECH_104-Nam2_27_14:0.0035563099)80.9/72:0.0001830212,(((((Histoplasma_capsulatum_CB062-2:0.0000010000,(Histoplasma_capsulatum_CB066-2:0.0000010000,(Histoplasma_capsulatum_SECH_109:0.0000010000,(Histoplasma_mississippiense_II_SECH_81-Nam1_WU24:0.0000010000,((Histoplasma_mississippiense_II_SECH_83-Nam1_CI_7:0.0000024253,Histoplasma_mississippiense_II_SECH_87-Nam1_CI_42:0.0000833677)89/99:0.0109308158,(Histoplasma_mississippiense_II_SECH_90-Nam1_DOWNS:0.0000026986,Histoplasma_mississippiense_II_SECH_102Nam2_505:0.0015272961)95.4/100:0.0005022096)84.7/76:0.0050437425)0/61:0.0000022768)0/75:0.0001386602)0/87:0.0000099549)99.8/88:0.0008515440,((((Histoplasma_capsulatum_CB063-2:0.0000010000,((Histoplasma_capsulatum_CB174-2:0.0001546034,Histoplasma_mississippiense_II_SECH_86-Nam1_CI_24:0.0000010000)0/75:0.0000027897,Histoplasma_capsulatum_CB186-2:0.0009565602)0/51:0.0000010000)0/50:0.0000028267,Histoplasma_capsulatum_CB064-2:0.0003299998)0/52:0.0000024485,Histoplasma_capsulatum_CB180-2:0.0000010000)0/33:0.0000010000,(Histoplasma_capsulatum_CB065-2:0.0000010000,((Histoplasma_capsulatum_CB168-2:0.0000010000,Histoplasma_capsulatum_CB192-2:0.0000697360)0/71:0.0000021072,Histoplasma_mississippiense_II_SECH_88-Nam1_CI_43:0.0000010000)0/65:0.0000027053)0/57:0.0000021861)0/39:0.0000027003)93.2/86:0.0002944739,Histoplasma_mississippiense_II_SECH_85-Nam1_CI_22:0.0013348824)44.7/64:0.0000764539,Histoplasma_mississippiense_I_SECH_89-Nam1_UCLA-531:0.0029796993)68.2/62:0.0001469750,Histoplasma_mississippiense_II_SECH_84-Nam1_CI_19:0.0004561990)100/88:0.0141391029)0/75:0.0000025923,(((((((((((Histoplasma_capsulatum_104_p_06:0.0000029664,(Histoplasma_capsulatum_144_p_08:0.0000010000,Histoplasma_capsulatum_327_P_12:0.0000029162)95.9/100:0.0002425894)0/87:0.0000022009,(((Histoplasma_capsulatum_136_P_07:0.0000010000,Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S11:0.0000010000)0/38:0.0000010000,Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S16:0.0000010000)0/72:0.0000010000,(Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S14:0.0000010000,Histoplasma_capsulatum_Histo-485P20:0.0000010000)0/90:0.0000021665)90.6/82:0.0001503642)100/100:0.0166265685,(Histoplasma_capsulatum_117_p_12:0.0000010000,(Histoplasma_capsulatum_1517_p_17:0.0000010000,Histoplasma_capsulatum_388_p_11:0.0000010000)0/84:0.0000010000)0/88:0.0000021838)90.6/66:0.0001504912,Histoplasma_capsulatum_316_p_10:0.0002595713)0/51:0.0000010000,Histoplasma_capsulatum_343_p_18:0.0000010000)0/56:0.0000010000,Histoplasma_capsulatum_122_p_10_B:0.0000010000)0/64:0.0000020300,Histoplasma_capsulatum_256_P_18:0.0013622675)100/100:0.0258309920,Histoplasma_capsulatum_JB_01752-Hc_01752:0.0211237630)99.8/82:0.0050727190,(((Histoplasma_capsulatum_19VMG-15:0.0031268720,Histoplasma_suramericanum_SECH_103-Nam2_3_11G:0.0025068809)74.9/61:0.0003217560,(((Histoplasma_capsulatum_HISSP-11571-Belem1:0.0023398316,((((Histoplasma_capsulatum_HISSP-CM6015:0.0039132336,(Histoplasma_capsulatum_HISSP-FGAMA2041:0.0005089399,Histoplasma_capsulatum_HISSP-FGFAN2059:0.0001491076)75/76:0.0001317933)100/85:0.0096629088,Histoplasma_capsulatum_HISSP-FGPIA2052:0.0002291871)0/46:0.0000025361,((((Histoplasma_capsulatum_HISSP-FGBIK2051:0.0003655642,Histoplasma_capsulatum_HISSP-FGLIN2055:0.0888212174)75.5/60:0.0002166026,Histoplasma_capsulatum_HISSP-FGPIE2055:0.0001612874)58.5/52:0.0000796355,Histoplasma_capsulatum_HISSP-FGBON2001:0.0001648575)62.9/52:0.0001858670,Histoplasma_capsulatum_HISSP-FGJOS2044:0.0004307806)76.6/46:0.0001318778)90.7/59:0.0001001698,Histoplasma_capsulatum_HISSP-FGFER2036:0.0000022332)0/53:0.0000024140)99.8/100:0.0020239352,Histoplasma_capsulatum_JB_062632-Hc_062632:0.0015677593)32.4/62:0.0001820944,Histoplasma_capsulatum_HISSP-FGPERS2034:0.0019646059)0/42:0.0000029513)100/80:0.0027716099,Histoplasma_capsulatum_NACVFR_Histo_HC1070058_2:0.0106186127)100/84:0.0045491726)0/65:0.0000053451,(((((Histoplasma_capsulatum_ES2_83Z:0.0051189988,(Histoplasma_capsulatum_SECH_107-mis_Hc_duboisii-B:0.0000029230,Histoplasma_capsulatum_ES2_90Z:0.0050094925)32.2/87:0.0002361213)86/96:0.0004604486,Histoplasma_capsulatum_ES2_86Z:0.0015638958)86.7/98:0.0002308561,(Histoplasma_capsulatum_ES2_88Z:0.0004775173,Histoplasma_capsulatum_HCH143:0.0005822674)77.7/98:0.0001804702)98.9/100:0.0009188191,Histoplasma_capsulatum_ES2_85Z:0.0008638218)94.1/100:0.0005913087,Histoplasma_capsulatum_ES2_89Z:0.0052838875)100/100:0.0028079529)100/82:0.0090139596,(Histoplasma_capsulatum_HISSP-B05821:0.0292048512,((((Histoplasma_capsulatum_SA15:0.0048259833,Histoplasma_ohiense_SECH_96.Nam2_CI_17:0.0003669112)100/100:0.0077285827,Histoplasma_ohiense_SECH_98.Nam2_CI_30:0.0000029482)77.6/70:0.0000809056,Histoplasma_ohiense_SECH_97-Nam2_CI_18:0.0000845609)0/56:0.0000021276,((((Histoplasma_capsulatum_SECH_110:0.0000010000,Histoplasma_ohiense_SECH_91-Nam2_G217B:0.0000028656)87.9/100:0.0001814429,Histoplasma_ohiense_SECH_95.Nam2_CI_10:0.0011498156)0/84:0.0000022576,((Histoplasma_ohiense_SECH_82-Nam1_CI_4:0.0003344426,Histoplasma_ohiense_SECH_92-Nam2_G222B:0.0001037549)0/89:0.0000020505,Histoplasma_ohiense_SECH_99-Nam2_CI_35:0.0005241669)99.9/88:0.0008541516)82.7/87:0.0000760959,(Histoplasma_ohiense_SECH_93.Nam2_CI_6:0.0004515587,Histoplasma_ohiense_SECH_94-Nam2_CI_9:0.0001142309)88.5/84:0.0001697957)79.4/64:0.0000755190)100/100:0.0085709684)100/100:0.0248455420)100/86:0.0077435574)97.2/86:0.0008142704,Histoplasma_capsulatum_HISSP-1014-Belem3:0.0032144699)98.7/86:0.0072305537,Histoplasma_capsulatum_HISSP-CM7256-xx-CL-SEN-xxxx-036-BB:0.0084571384)100/100:0.6251458359,(Histoplasma_capsulatum_JB_021091-Hc_021091:0.0020917935,Histoplasma_capsulatum_JB_073129-Hc_073129:0.0038270579)100/100:0.6907459922)100/100:0.5987838895,(((Histoplasma_capsulatum_HISSP-FGFAR0189:0.0000028210,Histoplasma_capsulatum_HISSP-FGPSO2043:0.0000020684)0/94:0.0000028645,Histoplasma_capsulatum_HISSP-FGFIN2028:0.0001564398)71/95:0.0002395063,(Histoplasma_capsulatum_HISSP-FGMAR2044:0.0167484649,Histoplasma_capsulatum_HISSP-FGTRO0285:0.0012009523)95.8/96:0.0034832663)100/100:0.5244442115);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -132190.666156
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------------Aspergillus_fumigatus_Af293
+|
+|                                                                      +--Histoplasma_capsulatum_07_12-RJ
+|                                                                   +--| (100)
+|                                                                   |  |        +--Histoplasma_capsulatum_CB053-2
+|                                                                   |  |     +--| (76)
+|                                                                   |  |     |  |  +--Histoplasma_capsulatum_CB055-2
+|                                                                   |  |     |  +--| (90)
+|                                                                   |  |     |     +--Histoplasma_capsulatum_SECH_101-Nam2_G184A
+|                                                                   |  |  +--| (97)
+|                                                                   |  |  |  +--Histoplasma_capsulatum_SECH_100-Nam2_G186A
+|                                                                   |  +--| (97)
+|                                                                   |     +--Histoplasma_capsulatum_HISSP-CM6408
+|                                                                +--| (77)
+|                                                                |  |           +--Histoplasma_capsulatum_JB_031837-Hc_031837
+|                                                                |  |        +--| (97)
+|                                                                |  |        |  +--Histoplasma_capsulatum_JB_062775-Hc_062775
+|                                                                |  |     +--| (100)
+|                                                                |  |     |  +--Histoplasma_capsulatum_JB_042430-Hc_042430
+|                                                                |  |  +--| (93)
+|                                                                |  |  |  +--Histoplasma_capsulatum_JB_083285_2-Hc_083285_2
+|                                                                |  +--| (51)
+|                                                                |     +--Histoplasma_suramericanum_SECH_105-Nam2_21_14
+|                                                             +--| (72)
+|                                                             |  +--Histoplasma_suramericanum_SECH_104-Nam2_27_14
+|                                                          +--| (75)
+|                                                          |  |                 +--Histoplasma_capsulatum_CB062-2
+|                                                          |  |              +--| (88)
+|                                                          |  |              |  |  +--Histoplasma_capsulatum_CB066-2
+|                                                          |  |              |  +--| (87)
+|                                                          |  |              |     |  +--Histoplasma_capsulatum_SECH_109
+|                                                          |  |              |     +--| (75)
+|                                                          |  |              |        |  +--Histoplasma_mississippiense_II_SECH_81-Nam1_WU24
+|                                                          |  |              |        +--| (61)
+|                                                          |  |              |           |     +--Histoplasma_mississippiense_II_SECH_83-Nam1_CI_7
+|                                                          |  |              |           |  +--| (99)
+|                                                          |  |              |           |  |  +--Histoplasma_mississippiense_II_SECH_87-Nam1_CI_42
+|                                                          |  |              |           +--| (76)
+|                                                          |  |              |              |  +--Histoplasma_mississippiense_II_SECH_90-Nam1_DOWNS
+|                                                          |  |              |              +--| (100)
+|                                                          |  |              |                 +--Histoplasma_mississippiense_II_SECH_102Nam2_505
+|                                                          |  |           +--| (46)
+|                                                          |  |           |  |        +--Histoplasma_capsulatum_CB063-2
+|                                                          |  |           |  |     +--| (50)
+|                                                          |  |           |  |     |  |     +--Histoplasma_capsulatum_CB174-2
+|                                                          |  |           |  |     |  |  +--| (75)
+|                                                          |  |           |  |     |  |  |  +--Histoplasma_mississippiense_II_SECH_86-Nam1_CI_24
+|                                                          |  |           |  |     |  +--| (51)
+|                                                          |  |           |  |     |     +--Histoplasma_capsulatum_CB186-2
+|                                                          |  |           |  |  +--| (52)
+|                                                          |  |           |  |  |  +--Histoplasma_capsulatum_CB064-2
+|                                                          |  |           |  +--| (30)
+|                                                          |  |           |     |  +--Histoplasma_capsulatum_CB065-2
+|                                                          |  |           |     +**| (57)
+|                                                          |  |           |        |     +--Histoplasma_capsulatum_CB168-2
+|                                                          |  |           |        |  +--| (71)
+|                                                          |  |           |        |  |  +--Histoplasma_capsulatum_CB192-2
+|                                                          |  |           |        +--| (65)
+|                                                          |  |           |           +--Histoplasma_mississippiense_II_SECH_88-Nam1_CI_43
+|                                                          |  |        +--| (86)
+|                                                          |  |        |  +--Histoplasma_capsulatum_CB180-2
+|                                                          |  |     +--| (64)
+|                                                          |  |     |  +--Histoplasma_mississippiense_II_SECH_85-Nam1_CI_22
+|                                                          |  |  +--| (62)
+|                                                          |  |  |  +--Histoplasma_mississippiense_I_SECH_89-Nam1_UCLA-531
+|                                                          |  +--| (88)
+|                                                          |     +--Histoplasma_mississippiense_II_SECH_84-Nam1_CI_19
+|                                                       +--| (86)
+|                                                       |  |                                +--Histoplasma_capsulatum_104_p_06
+|                                                       |  |                             +--| (87)
+|                                                       |  |                             |  |  +--Histoplasma_capsulatum_144_p_08
+|                                                       |  |                             |  +--| (100)
+|                                                       |  |                             |     +--Histoplasma_capsulatum_327_P_12
+|                                                       |  |                          +--| (100)
+|                                                       |  |                          |  |        +--Histoplasma_capsulatum_136_P_07
+|                                                       |  |                          |  |     +--| (38)
+|                                                       |  |                          |  |     |  +--Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S11
+|                                                       |  |                          |  |  +--| (72)
+|                                                       |  |                          |  |  |  +--Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S16
+|                                                       |  |                          |  +--| (82)
+|                                                       |  |                          |     |  +--Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S14
+|                                                       |  |                          |     +--| (90)
+|                                                       |  |                          |        +--Histoplasma_capsulatum_Histo-485P20
+|                                                       |  |                       +--| (66)
+|                                                       |  |                       |  |  +--Histoplasma_capsulatum_117_p_12
+|                                                       |  |                       |  +--| (88)
+|                                                       |  |                       |     |  +--Histoplasma_capsulatum_1517_p_17
+|                                                       |  |                       |     +--| (84)
+|                                                       |  |                       |        +--Histoplasma_capsulatum_388_p_11
+|                                                       |  |                    +--| (51)
+|                                                       |  |                    |  +--Histoplasma_capsulatum_316_p_10
+|                                                       |  |                 +--| (56)
+|                                                       |  |                 |  +--Histoplasma_capsulatum_343_p_18
+|                                                       |  |              +--| (64)
+|                                                       |  |              |  +--Histoplasma_capsulatum_122_p_10_B
+|                                                       |  |           +--| (100)
+|                                                       |  |           |  +--Histoplasma_capsulatum_256_P_18
+|                                                       |  |        +--| (82)
+|                                                       |  |        |  +--Histoplasma_capsulatum_JB_01752-Hc_01752
+|                                                       |  |     +--| (65)
+|                                                       |  |     |  |        +--Histoplasma_capsulatum_19VMG-15
+|                                                       |  |     |  |     +--| (61)
+|                                                       |  |     |  |     |  +--Histoplasma_suramericanum_SECH_103-Nam2_3_11G
+|                                                       |  |     |  |  +--| (80)
+|                                                       |  |     |  |  |  |        +--Histoplasma_capsulatum_HISSP-11571-Belem1
+|                                                       |  |     |  |  |  |     +--| (100)
+|                                                       |  |     |  |  |  |     |  |           +--Histoplasma_capsulatum_HISSP-CM6015
+|                                                       |  |     |  |  |  |     |  |        +--| (85)
+|                                                       |  |     |  |  |  |     |  |        |  |  +--Histoplasma_capsulatum_HISSP-FGAMA2041
+|                                                       |  |     |  |  |  |     |  |        |  +--| (76)
+|                                                       |  |     |  |  |  |     |  |        |     +--Histoplasma_capsulatum_HISSP-FGFAN2059
+|                                                       |  |     |  |  |  |     |  |     +--| (46)
+|                                                       |  |     |  |  |  |     |  |     |  +--Histoplasma_capsulatum_HISSP-FGPIA2052
+|                                                       |  |     |  |  |  |     |  |  +--| (59)
+|                                                       |  |     |  |  |  |     |  |  |  |           +--Histoplasma_capsulatum_HISSP-FGBIK2051
+|                                                       |  |     |  |  |  |     |  |  |  |        +--| (60)
+|                                                       |  |     |  |  |  |     |  |  |  |        |  +--Histoplasma_capsulatum_HISSP-FGLIN2055
+|                                                       |  |     |  |  |  |     |  |  |  |     +--| (52)
+|                                                       |  |     |  |  |  |     |  |  |  |     |  +--Histoplasma_capsulatum_HISSP-FGPIE2055
+|                                                       |  |     |  |  |  |     |  |  |  |  +--| (52)
+|                                                       |  |     |  |  |  |     |  |  |  |  |  +--Histoplasma_capsulatum_HISSP-FGBON2001
+|                                                       |  |     |  |  |  |     |  |  |  +--| (46)
+|                                                       |  |     |  |  |  |     |  |  |     +--Histoplasma_capsulatum_HISSP-FGJOS2044
+|                                                       |  |     |  |  |  |     |  +--| (53)
+|                                                       |  |     |  |  |  |     |     +--Histoplasma_capsulatum_HISSP-FGFER2036
+|                                                       |  |     |  |  |  |  +--| (62)
+|                                                       |  |     |  |  |  |  |  +--Histoplasma_capsulatum_JB_062632-Hc_062632
+|                                                       |  |     |  |  |  +--| (42)
+|                                                       |  |     |  |  |     +--Histoplasma_capsulatum_HISSP-FGPERS2034
+|                                                       |  |     |  +--| (84)
+|                                                       |  |     |     +--Histoplasma_capsulatum_NACVFR_Histo_HC1070058_2
+|                                                       |  |  +--| (82)
+|                                                       |  |  |  |              +--Histoplasma_capsulatum_ES2_83Z
+|                                                       |  |  |  |           +--| (96)
+|                                                       |  |  |  |           |  |  +--Histoplasma_capsulatum_SECH_107-mis_Hc_duboisii-B
+|                                                       |  |  |  |           |  +--| (87)
+|                                                       |  |  |  |           |     +--Histoplasma_capsulatum_ES2_90Z
+|                                                       |  |  |  |        +--| (98)
+|                                                       |  |  |  |        |  +--Histoplasma_capsulatum_ES2_86Z
+|                                                       |  |  |  |     +--| (100)
+|                                                       |  |  |  |     |  |  +--Histoplasma_capsulatum_ES2_88Z
+|                                                       |  |  |  |     |  +--| (98)
+|                                                       |  |  |  |     |     +--Histoplasma_capsulatum_HCH143
+|                                                       |  |  |  |  +--| (100)
+|                                                       |  |  |  |  |  +--Histoplasma_capsulatum_ES2_85Z
+|                                                       |  |  |  +--| (100)
+|                                                       |  |  |     +--Histoplasma_capsulatum_ES2_89Z
+|                                                       |  +--| (86)
+|                                                       |     |  +--Histoplasma_capsulatum_HISSP-B05821
+|                                                       |     +--| (100)
+|                                                       |        |           +--Histoplasma_capsulatum_SA15
+|                                                       |        |        +--| (100)
+|                                                       |        |        |  +--Histoplasma_ohiense_SECH_96.Nam2_CI_17
+|                                                       |        |     +--| (70)
+|                                                       |        |     |  +--Histoplasma_ohiense_SECH_98.Nam2_CI_30
+|                                                       |        |  +--| (56)
+|                                                       |        |  |  +--Histoplasma_ohiense_SECH_97-Nam2_CI_18
+|                                                       |        +--| (100)
+|                                                       |           |           +--Histoplasma_capsulatum_SECH_110
+|                                                       |           |        +--| (100)
+|                                                       |           |        |  +--Histoplasma_ohiense_SECH_91-Nam2_G217B
+|                                                       |           |     +--| (84)
+|                                                       |           |     |  +--Histoplasma_ohiense_SECH_95.Nam2_CI_10
+|                                                       |           |  +--| (87)
+|                                                       |           |  |  |     +--Histoplasma_ohiense_SECH_82-Nam1_CI_4
+|                                                       |           |  |  |  +--| (89)
+|                                                       |           |  |  |  |  +--Histoplasma_ohiense_SECH_92-Nam2_G222B
+|                                                       |           |  |  +--| (88)
+|                                                       |           |  |     +--Histoplasma_ohiense_SECH_99-Nam2_CI_35
+|                                                       |           +--| (64)
+|                                                       |              |  +--Histoplasma_ohiense_SECH_93.Nam2_CI_6
+|                                                       |              +--| (84)
+|                                                       |                 +--Histoplasma_ohiense_SECH_94-Nam2_CI_9
+|                                                    +--| (86)
+|                                                    |  +--Histoplasma_capsulatum_HISSP-1014-Belem3
+|                         +--------------------------| (100)
+|                         |                          +--Histoplasma_capsulatum_HISSP-CM7256-xx-CL-SEN-xxxx-036-BB
++-------------------------| (100)
+|                         |                             +--Histoplasma_capsulatum_JB_021091-Hc_021091
+|                         +-----------------------------| (100)
+|                                                       +--Histoplasma_capsulatum_JB_073129-Hc_073129
+|
+|                            +--Histoplasma_capsulatum_HISSP-FGFAR0189
+|                         +--| (94)
+|                         |  +--Histoplasma_capsulatum_HISSP-FGPSO2043
+|                      +--| (95)
+|                      |  +--Histoplasma_capsulatum_HISSP-FGFIN2028
++----------------------| (100)
+                       |  +--Histoplasma_capsulatum_HISSP-FGMAR2044
+                       +--| (96)
+                          +--Histoplasma_capsulatum_HISSP-FGTRO0285
+
+
+Consensus tree in newick format: 
+
+(Aspergillus_fumigatus_Af293:0.3195133704,((((((((Histoplasma_capsulatum_07_12-RJ:0.0045962033,(((Histoplasma_capsulatum_CB053-2:0.0017983716,(Histoplasma_capsulatum_CB055-2:0.0000021666,Histoplasma_capsulatum_SECH_101-Nam2_G184A:0.0000021902)90:0.0000021482)76:0.0000029878,Histoplasma_capsulatum_SECH_100-Nam2_G186A:0.0000021835)97:0.0008688410,Histoplasma_capsulatum_HISSP-CM6408:0.0064266690)97:0.0021919138)100:0.0158608258,((((Histoplasma_capsulatum_JB_031837-Hc_031837:0.0002163102,Histoplasma_capsulatum_JB_062775-Hc_062775:0.0005234728)97:0.0000020418,Histoplasma_capsulatum_JB_042430-Hc_042430:0.0000785215)100:0.0077567791,Histoplasma_capsulatum_JB_083285_2-Hc_083285_2:0.0006345665)93:0.0034722847,Histoplasma_suramericanum_SECH_105-Nam2_21_14:0.0035161698)51:0.0000571757)77:0.0055142595,Histoplasma_suramericanum_SECH_104-Nam2_27_14:0.0035577020)72:0.0001827253,((((((Histoplasma_capsulatum_CB062-2:0.0000022823,(Histoplasma_capsulatum_CB066-2:0.0000022787,(Histoplasma_capsulatum_SECH_109:0.0000022585,(Histoplasma_mississippiense_II_SECH_81-Nam1_WU24:0.0000022657,((Histoplasma_mississippiense_II_SECH_83-Nam1_CI_7:0.0000021711,Histoplasma_mississippiense_II_SECH_87-Nam1_CI_42:0.0000829993)99:0.0104461879,(Histoplasma_mississippiense_II_SECH_90-Nam1_DOWNS:0.0000020330,Histoplasma_mississippiense_II_SECH_102Nam2_505:0.0015264888)100:0.0005007258)76:0.0055343569)61:0.0001261693)75:0.0000021491)87:0.0000227592)88:0.0008518475,(((Histoplasma_capsulatum_CB063-2:0.0000022837,((Histoplasma_capsulatum_CB174-2:0.0001554582,Histoplasma_mississippiense_II_SECH_86-Nam1_CI_24:0.0000022916)75:0.0000021298,Histoplasma_capsulatum_CB186-2:0.0009569486)51:0.0000021949)50:0.0000022426,Histoplasma_capsulatum_CB064-2:0.0003294341)52:0.0000022730,(Histoplasma_capsulatum_CB065-2:0.0000023393,((Histoplasma_capsulatum_CB168-2:0.0000023075,Histoplasma_capsulatum_CB192-2:0.0000708178)71:0.0000021954,Histoplasma_mississippiense_II_SECH_88-Nam1_CI_43:0.0000023384)65:0.0000023282)57:0.0000010825)30:0.0000023056)46:0.0000022665,Histoplasma_capsulatum_CB180-2:0.0000022755)86:0.0002942493,Histoplasma_mississippiense_II_SECH_85-Nam1_CI_22:0.0013343102)64:0.0000765650,Histoplasma_mississippiense_I_SECH_89-Nam1_UCLA-531:0.0029803662)62:0.0001468371,Histoplasma_mississippiense_II_SECH_84-Nam1_CI_19:0.0004555908)88:0.0141401468)75:0.0000023579,(((((((((((Histoplasma_capsulatum_104_p_06:0.0000023047,(Histoplasma_capsulatum_144_p_08:0.0000022797,Histoplasma_capsulatum_327_P_12:0.0000022679)100:0.0002427987)87:0.0001501522,(((Histoplasma_capsulatum_136_P_07:0.0000023056,Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S11:0.0000023056)38:0.0000023056,Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S16:0.0000023056)72:0.0000022926,(Histoplasma_capsulatum_Dr_Anuradha_Fungal_WGS_S14:0.0000022988,Histoplasma_capsulatum_Histo-485P20:0.0000022988)90:0.0000022988)82:0.0000023193)100:0.0166291008,(Histoplasma_capsulatum_117_p_12:0.0000023128,(Histoplasma_capsulatum_1517_p_17:0.0000023056,Histoplasma_capsulatum_388_p_11:0.0000023056)84:0.0000022927)88:0.0001502660)66:0.0000023063,Histoplasma_capsulatum_316_p_10:0.0002597923)51:0.0000022796,Histoplasma_capsulatum_343_p_18:0.0000023056)56:0.0000022861,Histoplasma_capsulatum_122_p_10_B:0.0000023004)64:0.0000022861,Histoplasma_capsulatum_256_P_18:0.0013625998)100:0.0258315657,Histoplasma_capsulatum_JB_01752-Hc_01752:0.0211239068)82:0.0050725785,(((Histoplasma_capsulatum_19VMG-15:0.0031276201,Histoplasma_suramericanum_SECH_103-Nam2_3_11G:0.0025076612)61:0.0003210114,(((Histoplasma_capsulatum_HISSP-11571-Belem1:0.0023403251,((((Histoplasma_capsulatum_HISSP-CM6015:0.0039134896,(Histoplasma_capsulatum_HISSP-FGAMA2041:0.0005087082,Histoplasma_capsulatum_HISSP-FGFAN2059:0.0001493726)76:0.0001320605)85:0.0096635226,Histoplasma_capsulatum_HISSP-FGPIA2052:0.0002297070)46:0.0000021183,((((Histoplasma_capsulatum_HISSP-FGBIK2051:0.0003647452,Histoplasma_capsulatum_HISSP-FGLIN2055:0.0888167853)60:0.0002180377,Histoplasma_capsulatum_HISSP-FGPIE2055:0.0001545359)52:0.0000936617,Histoplasma_capsulatum_HISSP-FGBON2001:0.0001647972)52:0.0001757110,Histoplasma_capsulatum_HISSP-FGJOS2044:0.0004302649)46:0.0001340976)59:0.0001011182,Histoplasma_capsulatum_HISSP-FGFER2036:0.0000022118)53:0.0000029397)100:0.0020248571,Histoplasma_capsulatum_JB_062632-Hc_062632:0.0015675705)62:0.0001828388,Histoplasma_capsulatum_HISSP-FGPERS2034:0.0019640417)42:0.0000020926)80:0.0027719440,Histoplasma_capsulatum_NACVFR_Histo_HC1070058_2:0.0106192420)84:0.0045493523)65:0.0000051836,(((((Histoplasma_capsulatum_ES2_83Z:0.0051185117,(Histoplasma_capsulatum_SECH_107-mis_Hc_duboisii-B:0.0000027627,Histoplasma_capsulatum_ES2_90Z:0.0050094088)87:0.0002365761)96:0.0004605616,Histoplasma_capsulatum_ES2_86Z:0.0015637510)98:0.0002311326,(Histoplasma_capsulatum_ES2_88Z:0.0004772155,Histoplasma_capsulatum_HCH143:0.0005818592)98:0.0001805765)100:0.0009187208,Histoplasma_capsulatum_ES2_85Z:0.0008641942)100:0.0005927153,Histoplasma_capsulatum_ES2_89Z:0.0052840743)100:0.0028084469)82:0.0090151125,(Histoplasma_capsulatum_HISSP-B05821:0.0292051410,((((Histoplasma_capsulatum_SA15:0.0048261344,Histoplasma_ohiense_SECH_96.Nam2_CI_17:0.0003670360)100:0.0077288430,Histoplasma_ohiense_SECH_98.Nam2_CI_30:0.0000022801)70:0.0000807977,Histoplasma_ohiense_SECH_97-Nam2_CI_18:0.0000846435)56:0.0000022203,((((Histoplasma_capsulatum_SECH_110:0.0000022829,Histoplasma_ohiense_SECH_91-Nam2_G217B:0.0000020668)100:0.0001816167,Histoplasma_ohiense_SECH_95.Nam2_CI_10:0.0011500694)84:0.0000024658,((Histoplasma_ohiense_SECH_82-Nam1_CI_4:0.0003346599,Histoplasma_ohiense_SECH_92-Nam2_G222B:0.0001038921)89:0.0000020178,Histoplasma_ohiense_SECH_99-Nam2_CI_35:0.0005235423)88:0.0008543120)87:0.0000756605,(Histoplasma_ohiense_SECH_93.Nam2_CI_6:0.0004518575,Histoplasma_ohiense_SECH_94-Nam2_CI_9:0.0001143576)84:0.0001689459)64:0.0000759413)100:0.0085714840)100:0.0248462598)86:0.0077439269)86:0.0008137483,Histoplasma_capsulatum_HISSP-1014-Belem3:0.0032151835)86:0.0072459704,Histoplasma_capsulatum_HISSP-CM7256-xx-CL-SEN-xxxx-036-BB:0.0084457693)100:0.6251896239,(Histoplasma_capsulatum_JB_021091-Hc_021091:0.0020956143,Histoplasma_capsulatum_JB_073129-Hc_073129:0.0038252109)100:0.6907383897)100:0.5988050486,(((Histoplasma_capsulatum_HISSP-FGFAR0189:0.0000024558,Histoplasma_capsulatum_HISSP-FGPSO2043:0.0000024373)94:0.0000025137,Histoplasma_capsulatum_HISSP-FGFIN2028:0.0001566533)95:0.0002398790,(Histoplasma_capsulatum_HISSP-FGMAR2044:0.0167498073,Histoplasma_capsulatum_HISSP-FGTRO0285:0.0012002446)96:0.0034830405)100:0.5244576214);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t combined_top50.partition.treefile -q combined_top50.partition.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s phyling_align_top50/Top50_multi.mfa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s phyling_align_top50/Top50_multi.mfa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Jan 31 17:34:41 2024
+Total CPU time used: 19093.87457 seconds (5h:18m:13s)
+Total wall-clock time used: 2461.782341 seconds (0h:41m:1s)
+
