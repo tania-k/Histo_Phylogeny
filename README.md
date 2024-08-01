@@ -20,10 +20,13 @@ It would be best to familiarize yourself with PHYling and it's complex set up an
       *05_toverr_and_combine.sh
    *Next will require some working with the documents. First to sort your tsv output by the second column (Treeness/RCV). Then capture the first 50 lines to a new text. Use the very short script I wrote by feeding the script with the updated 50 line tsv file which then copies over the phyling generated BUSCO alignment files to a new folder.
       *aux.move_files.sh - do `bash aux.move_files.sh FILE.50.BUSCO.tsv`
-   *Next create a basic partitioning file (use example found in this github)
-
-
-
+   *Next create a basic partitioning file (use example found in this github) which takes the length of each BUSCO alignment into consideration. Then run the next aux script.
+     *aux.combine_AA.sh
+   *The last step should generate you a Top50.mfa alignment file that combines the alignment of all the top 50 BUSCO alignment genes.
+	Take this alignment file, along with the partitioning file you generated to run the next step. Here you will be creating a modeltest output file `combined_top50.modeltest.out` that will indicate to you the best partitioning model to use for your phylogentic tree based on BIC, AIC, and AICc. Choose the value that works for you.
+     *06_modeltest.sh
+   *Once generated read the modeltest output file read the result, I chose the AIC partitioning model `JTT-DCMUT+I+G4`, you can do a quick regex into your already formed partitioning txt to replace with these values (see example combined_top50.partition file) and run the next step which is re-running your IQTree. 
+     *07_iqtree.sh
 
 To make your tree ultrametric use ETE3 toolkit - https://github.com/etetoolkit/ete
 
