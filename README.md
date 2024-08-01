@@ -10,7 +10,7 @@
 
 It would be best to familiarize yourself with PHYling and it's complex set up and tools. 
    *PHYling uses BUSCO to build a concatenated gene tree. For our dataset we used the eurotiomycetes_odb10 (so on 3546 genes) 
-      *01_phyling.sh
+      *01_phyling.sh\n
       *02_phyling_tree.sh
    *Then to run a concatenated IQtree to build a base phylogenetic tree do:
       *03_iqtree.sh
